@@ -1,0 +1,80 @@
+
+<div id="home-container">
+  <div class="whiteBorderGlassBox">
+    <div class="homeHeadContainer">
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="avatar-frame-online">
+            <img src="assets/img/generic_avatar.png" alt="Avatar" id="homeAvatarPicture">
+          </div>
+        </div>
+        <div class="col">
+          <b>Hector</b>
+          <div>
+            <span>Online</span>
+            <br />
+            <span> < Escribe un estado... ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="whiteContainerPadded marto15">
+
+    <div class="row">
+      <div class="col">
+        <input class="form-control" type="text" placeholder="Buscar Amigo" [(ngModel)]="query" />
+      </div>
+      <div class="col-md-auto">
+        <img class="icon-add" src="/assets/img/logo_live_add.png">
+      </div>
+    </div>
+
+    <hr />
+    <b>Conectados ({{friends.length}}) / ({{friends.length}})</b>
+
+    <ng-container *ngFor=" let users of friends | search: query; let i = index; ">
+
+      <div *ngIf="users.status" class="marbo5">
+        <span  routerLink="/chat/{{users.uid}}">
+
+          <img class="status-icon" src="assets/img/logo_live_online.png">
+          <b>{{users.nick}}</b> -
+          <small>{{users.email}}</small>
+
+
+
+        </span>
+      </div>
+
+    </ng-container>
+
+    <br />
+
+    <b>Desconectados</b>
+    <ng-container *ngFor=" let users of friends | search: query; let i = index; ">
+
+      <div *ngIf="!users.status" class="marbo5">
+        <span routerLink="/chat/{{users.uid}}">
+
+          <img class="status-icon" src="assets/img/logo_live_offline.png">
+          <b>{{users.nick}}</b> -
+          <small>{{users.email}}</small>
+
+
+
+        </span>
+      </div>
+    </ng-container>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+

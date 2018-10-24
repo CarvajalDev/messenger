@@ -1,0 +1,48 @@
+
+#home-container{
+
+  background-image: url("/assets/img/msnbg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+#homeAvatarPicture{
+
+  border: 2px solid rgba(255, 255, 255, .75);
+  padding: 8px;
+
+}
+
+.homeHeadContainer{
+  background-color: rgba(255, 255, 255, .50);
+}
+
+.status-icon{
+
+  width: 20px;
+
+}
+
+.avatar-frame-online{
+
+  background: rgb(42,193,18);
+  background: linear-gradient(0deg, rgba(42,193,18,1) 44%, rgba(0,255,0,1) 70%);
+}
+
+.whiteContainerPadded{
+  padding: 15px;
+  background-color: #feffff;
+}
+
+.icon-add{
+
+  width: 30px;
+
+}
+
+.marbo5{
+
+  margin-bottom: 5px;
+
+}

@@ -1,0 +1,18 @@
+.login-container{
+
+  background-image: url("/assets/img/msnbg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+}
+
+.btn-reto{
+
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(0,230,0,1);
+  -moz-box-shadow: 0px 0px 40px 3px rgba(0,230,0,1);
+  box-shadow: 0px 0px 40px 3px rgba(0,230,0,1);
+  color: #ffffff !important;
+
+
+}
